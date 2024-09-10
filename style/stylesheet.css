@@ -18,7 +18,26 @@ fieldset {
 }
 
 .fa {
-    font-size: 24px;
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #6e5494;
+    color: white;
+}
+
+.fa-envelope {
+    background: red;
+    color: white;
 }
 
 .roboto-serif {
