@@ -1,0 +1,93 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+fieldset {
+    font-family: Arial;
+}
+
+.fa {
+    font-size: 24px;
+}
+
+.roboto-serif {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d83a2d;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.topnav a:hover:not(.active) {
+    background-color: #ed7f15;
+}
+
+.active {
+    background-color: #006698;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+#nameplate {
+    animation-name: nameplate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: black;
+}
+
+@keyframes nameplate {
+    0% {
+        color: black;
+    }
+
+    10% {
+        color: darkred;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: orangered;
+    }
+
+    75% {
+        color: red;
+    }
+
+    100% {
+        color: black;
+    }
+}
