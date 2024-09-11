@@ -1,0 +1,24 @@
+body {
+    background-color: aliceblue;
+}
+
+.roboto-serif {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20px;
+}
