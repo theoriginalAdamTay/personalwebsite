@@ -115,37 +115,3 @@ a:nth-child(5):hover~.animation {
     left: 470px;
     background-color: #e67e22;
 }
-
-p {
-    margin-top: 30px;
-    text-align: justify;
-    font-family: Arial;
-    font-size: 22px;
-}
-
-fieldset {
-    font-family: Arial;
-}
-
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-github {
-    background: #6e5494;
-    color: white;
-}
-
-.fa-envelope {
-    background: red;
-    color: white;
-}

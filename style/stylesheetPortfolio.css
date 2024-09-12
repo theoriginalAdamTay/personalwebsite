@@ -1,0 +1,241 @@
+body {
+    background: aliceblue;
+    font-family: "Teko", sans-serif;
+    padding-right: 2rem;
+}
+
+.roboto-serif {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-family: Arial;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.gallery__strip {
+    min-height: 100vh;
+}
+
+.gallery__strip__wrapper {
+    flex: 0 0 100%;
+    justify-content: flex-end;
+    background: aliceblue;
+    border-right: 2px solid aliceblue;
+    position: relative;
+}
+
+@media (min-width: 500px) {
+    .gallery__strip__wrapper {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 950px) {
+    .gallery {
+        height: 100vh;
+    }
+
+    .gallery__strip.one {
+        animation: 60s move-it ease alternate infinite 5s;
+        transform: translateY(2%);
+    }
+
+    .gallery__strip.three {
+        animation: 70s move-it ease alternate infinite 6s;
+        transform: translateY(2%);
+    }
+
+    .gallery__strip.two {
+        animation: 58s move-it-2 ease alternate infinite 5s;
+        transform: translateY(-50%);
+    }
+
+    .gallery__strip.four {
+        animation: 65s move-it-2 ease alternate infinite 5.5s;
+        transform: translateY(-50%);
+    }
+
+    .gallery__strip:hover {
+        animation-play-state: paused;
+    }
+
+    .gallery__strip__wrapper {
+        flex: 0 0 25%;
+    }
+}
+
+.photo {
+    position: relative;
+    text-align: right;
+    padding-bottom: 3rem;
+}
+
+.photo__image img {
+    width: 90%;
+    transform: translateX(30%);
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+
+.photo__name {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    margin-top: -25px;
+    transition: 0.4s ease-in-out 0.4s;
+    position: relative;
+    width: 100%;
+}
+
+.photo:hover .photo__image img {
+    transform: translateX(0%);
+}
+
+.photo:hover .photo__name {
+    color: red;
+}
+
+@keyframes move-it {
+    0%,
+    90%,
+    100% {
+        transform: translateY(2%);
+    }
+
+    45% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes move-it-2 {
+    0%,
+    90%,
+    100% {
+        transform: translateY(-50%);
+    }
+
+    45% {
+        transform: translateY(5%);
+    }
+}
