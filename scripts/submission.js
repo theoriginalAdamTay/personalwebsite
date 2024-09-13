@@ -9,5 +9,6 @@ function submitForm() {
     else {
         alert("Validation successful!");
         window.open('mailto:ogadamtay313@gmail.com?subject=Message%20from%20a%20website%20user')
+        location.reload();
     }
 }
