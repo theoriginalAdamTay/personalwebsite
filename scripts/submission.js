@@ -8,7 +8,7 @@ function submitForm() {
     }
     else {
         alert("Validation successful!");
-        window.open('mailto:ogadamtay313@gmail.com?subject=Message%20from%20a%20website%20user')
-        location.assign("contact.html")
+        const message = encodeURIComponent(document.getElementById('contactMessage').value);
+        window.open('mailto:ogadamtay313@gmail.com?subject=Message%20from%20a%20website%20user&body={message}', '_blank');
     }
 }
