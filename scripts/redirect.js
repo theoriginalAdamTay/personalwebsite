@@ -1,3 +1,5 @@
 function redirect() {
-    location.replace("home.html");
+    var sound = document.getElementById("audio");
+    sound.play();
+    setTimeout(function () { location.replace('home.html'); }, sound.duration * 1000);
 }
